@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/awesome_splash/core/SplashContainer.gd" type="Script" id=1]
+[ext_resource path="res://src/demo_collection/zoom/splash_screen.tscn" type="PackedScene" id=2]
+[ext_resource path="res://menu/Title/TitleMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/images/miniBanner.png" type="Texture" id=4]
+
+[node name="SplashContainer" type="Node2D"]
+script = ExtResource( 1 )
+move_to_scene = ExtResource( 3 )
+
+[node name="SplashZoom" parent="." instance=ExtResource( 2 )]
+
+[node name="DevBanner" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_scale = Vector2( 2.00059, 1.99896 )
+texture = ExtResource( 4 )
